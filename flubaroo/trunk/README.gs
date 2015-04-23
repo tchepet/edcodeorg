@@ -60,5 +60,4 @@
 //   Version 24 3/26/15:  Changed locking mechanism for autograde.
 //   Version 25 4/1/15:   Removed code to delete all existing triggers when turning on autograde. This wasn't local to
 //                        the sheet, and was actually disabling autograde across multiple sheets.
-
-
+//   Version 26: 4/23/15: Added Polish language.
