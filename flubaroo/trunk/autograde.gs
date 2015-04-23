@@ -329,10 +329,6 @@ function AutogradeClass()
     var dp = PropertiesService.getDocumentProperties();
     var sheet = getSheetWithSubmissions(ss);
     
-    // ensure any old triggers are gone first. shouldn't have to, but
-    // seeing weird trigger related issues (likely related to Google bug).
-    deleteAllProjectTriggers();
-    
     var trigger = ScriptApp.newTrigger("onAutogradeSubmission")
                            .forSpreadsheet(ss)
                            .onFormSubmit()
@@ -612,7 +608,8 @@ function onAutogradeSubmission()
 
   // This could be "triggered" whilst another submission is being 
   // processed, so get an exclusive, public lock.
-  grading_lock = LockService.getPublicLock();
+  //grading_lock = LockService.getPublicLock();
+  grading_lock = LockService.getDocumentLock();
   
   if (!grading_lock.tryLock(10))
     {
