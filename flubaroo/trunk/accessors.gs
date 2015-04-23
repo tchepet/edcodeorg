@@ -119,6 +119,7 @@ function getSheetWithGrades(ss)
 
 function getSheetWithGradesInternal(ss)
 {
+   Debug.info("getSheetWithGradesInternal");
    var up = PropertiesService.getDocumentProperties();
   
    var sheet = ss.getSheetByName(langstr("FLB_STR_SHEETNAME_GRADES"));
@@ -139,6 +140,8 @@ function getSheetWithGradesInternal(ss)
            sheet.setName(langstr("FLB_STR_SHEETNAME_GRADES"));
          }
      }
+  
+  Debug.info("getSheetWithGradesInternal, returning:" + sheet);
    
    return sheet;
 }

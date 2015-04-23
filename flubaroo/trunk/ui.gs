@@ -72,10 +72,14 @@ function UIClass()
     // Some msg boxes only continue if yes is selected, so default
     // to that for silent operation.
     var result = "yes";
-    
+    Debug.info("for msgBox, checking if UI is on...");
     if (this.isOn())
       {
+        Debug.info("showing message box!");
+        Logger.log("hi. doing msgbox now...");
         result = Browser.msgBox(title, prompt, buttons); 
+        Debug.info("message box shown!");
+
       }
     
     return result;
@@ -1328,7 +1332,6 @@ function processAdvOptionsForm(formObject)
       dp.setProperty(DOC_PROP_ADV_OPTION_PASS_RATE, pass_rate);
     }
 }
-
 
 function getFlubarooTipHTML()
 {

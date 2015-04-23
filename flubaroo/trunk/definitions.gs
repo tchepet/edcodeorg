@@ -20,7 +20,7 @@ FIELD_RESET_SHEET_NAME = "fieldreset";
 FIELD_LOG_DEFAULT_RATE = 25;
 
 // Current version. Shown in "About Flubaroo" dialogue.
-gbl_version_str = "Version 23";
+gbl_version_str = "Version 25";
                   
 // NOTE: Update version in README.gas                  
 

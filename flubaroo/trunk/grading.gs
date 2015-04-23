@@ -122,9 +122,11 @@ function gradeStep1()
   // re-grading will overwrite them, unless the UI is off.
   if (gotSheetWithGrades(ss) && UI.isOn())
     {
+      Debug.info("about to show message about replacing grades");
       result = UI.msgBox(langstr("FLB_STR_NOTIFICATION"),
                          langstr("FLB_STR_REPLACE_GRADES_PROMPT"),
                          Browser.Buttons.YES_NO);
+      Debug.info("showed them...");
       
       if (result !== "yes")
         {
@@ -158,8 +160,10 @@ function gradeStep1()
   else
     {
       // Create and display the Step 1 UI window.
+      Debug.info("about to show step1 grading UI...");
       app = UI.step1Grading(sheet);
       ss.show(app);
+      Debug.info("UI displayed");
     }
     
   return app;
