@@ -61,3 +61,4 @@
 //   Version 25 4/1/15:   Removed code to delete all existing triggers when turning on autograde. This wasn't local to
 //                        the sheet, and was actually disabling autograde across multiple sheets.
 //   Version 26: 4/23/15: Added Polish language.
+//   version 27: 7/1/15:  Updated URLs for images hosted on App Engine.

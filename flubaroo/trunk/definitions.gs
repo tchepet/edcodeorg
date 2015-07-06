@@ -20,7 +20,7 @@ FIELD_RESET_SHEET_NAME = "fieldreset";
 FIELD_LOG_DEFAULT_RATE = 25;
 
 // Current version. Shown in "About Flubaroo" dialogue.
-gbl_version_str = "Version 26";
+gbl_version_str = "Version 27";
                   
 // NOTE: Update version in README.gas                  
 
@@ -76,11 +76,11 @@ HIDDEN_GOODIES_NUMBER_SUBMISSIONS = 1;
 HIDDEN_GOODIES_CHART_URL = 2;
 
 FLUBAROO_WELCOME_IMG_URL =
-  'http://flubaroo.appspot.com/flubaroo_128x128_no_padding.png';
+  'http://flubaroo2.appspot.com/flubaroo_128x128_no_padding.png';
 FLUBAROO_WORKING_IMG_URL =
-  'http://flubaroo.appspot.com/flubaroo_working.gif';
+  'http://flubaroo2.appspot.com/flubaroo_working.gif';
 FLUBAROO_TIP_IMG_URL =
-  'http://flubaroo.appspot.com/tips.png';
+  'http://flubaroo2.appspot.com/tips.png';
 
 // Grading option identifiers
 GRADING_OPT_STUD_ID = "Identifies Student";
